@@ -35,11 +35,26 @@ In this tutorial, we setup Azure Sentinel (SIEM) and connect it to a live virtua
 ![image](https://github.com/DevinWilliamsIT/siemtutorial/assets/155914712/c1830895-8f3f-4899-a5ed-1254e965e1e4)
 
 <p>
-  Next navigate to Networking within our Virtual Machine creation, find NIC network security group, change to advanced and create a new one.
+  Next navigate to Networking within our Virtual Machine creation, find NIC network security group, change to advanced, create a new one and delete the default one.
 </p>
 
 ![image](https://github.com/DevinWilliamsIT/siemtutorial/assets/155914712/1db7132b-c63c-4119-ae45-f6a474e6d99d)
 
+<p>
+Now we are going to add an inbound rule and change the destination port to "*", and change the priority to 100.
+</p>
+
+![image](https://github.com/DevinWilliamsIT/siemtutorial/assets/155914712/1a4e6ea9-b977-4502-9a95-afb782f19d62)
+
+![image](https://github.com/DevinWilliamsIT/siemtutorial/assets/155914712/0e3c3e6d-92c2-4fcc-9e33-3e1b3f49a2dd)
+
+<p>
+  What this is going to do is allow all trafic from the internet into our Virtual Machine.
+</p>
+
+<p>
+  Next finish and create your Virtual Machine.
+</p>
 
 
 
